@@ -1,0 +1,27 @@
+{
+  "versao": "0.3.0",
+  "data": "2026-10-14",
+  "titulo": "Atualização automática, login conferido, diagnóstico e manual",
+  "novidades": [
+    "O painel avisa quando sai versão nova, mostra as novidades e atualiza com um clique. Só instala pacote com a assinatura digital do PMI-GO e o SHA-256 conferidos; se algo falhar, volta sozinho para a versão anterior.",
+    "Login conferido no Portal Goiás antes de salvar: uma senha errada nunca substitui a que funcionava.",
+    "Proteção da conta: no máximo 3 senhas recusadas a cada 15 minutos, e o painel, o Claude e a CLI param juntos de tentar.",
+    "Botões Sair (ninguém entra no PMI sozinho até você clicar em Entrar) e Esquecer o login deste computador.",
+    "Tela Diagnóstico: o que está funcionando e o que fazer, e pacote de suporte com CPF e senhas ocultos.",
+    "Registro do PMI-GO no Claude Desktop (inclusive o da Microsoft Store), Claude Code, Codex, Antigravity, Cursor e VS Code, com cópia de segurança da configuração.",
+    "Manual do usuário e manual técnico no menu Manual e em PDF (pmi-mcp manual).",
+    "Tela Sobre com créditos, novidades, tudo o que o PMI-GO faz e o histórico de versões; autoria no rodapé.",
+    "Segurança do painel: confere o endereço de cada chamada (contra páginas maliciosas) e só abre o navegador depois de provar que é o próprio painel na porta."
+  ],
+  "pagina": "https://github.com/windson83/pmi-go-versoes/releases/tag/v0.3.0",
+  "setup": "https://github.com/windson83/pmi-go-versoes/releases/download/v0.3.0/PMI-GO-Setup-0.3.0.exe",
+  "minima": "",
+  "pacote": "https://github.com/windson83/pmi-go-versoes/releases/download/v0.3.0/PMI-GO-atualizacao-0.3.0.bin",
+  "pacote_sha256": "43dc4a29d6a71b84dfd56ba99c32b1b8659820644c025d171980186d7274cd37",
+  "assinado_em": "2026-10-15T01:12:18Z",
+  "assinatura": "isaPJhcK4LIjWqYq/RDbg1DTaGrgG4reli3KyWH8QvNJAi2ioU8e+Cyh9Q5TOPPDgpe5/2DDA84qztam6vV1CA==",
+  "setup_sha256": "0b69e3e6dde403b0bb37cae80fdfc71c959a21cc26eed0a1ae8676dad3fd8b16",
+  "assinatura_setup": "FN/++AbUA3iYc9EzC9DB4MlIqAyC4F9Qftd3e/SO4eWfgKjtUu5mNYN77vOz0wJoLAsIdizHOGCC5wPSl0J7Bw==",
+  "expira_em": "2027-01-13T01:12:18Z",
+  "assinatura_validade": "v4fYlJCBBqiSCqWAWmPRkNGjeS+UZULEKwflDczL/O9JsGv/LkW2WQDlm7UGh5ILfZW+EKgS4vsxgeHQgJYuBQ=="
+}
