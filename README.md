@@ -7,37 +7,40 @@ O PMI-GO é um painel no próprio computador para consultar bens, ver o patrimô
 gerar relatórios (Excel, CSV e Termo de Responsabilidade em PDF) e, se houver uma IA instalada, analisar a situação
 da unidade. **O PMI-GO só lê o PMI; movimentação só com prévia e confirmação de quem usa.**
 
-## Baixar a versão mais nova: 0.3.0
+## Baixar a versão mais nova: 0.4.0
 
 | Arquivo | Para quê | Tamanho |
 |---|---|---|
-| [**PMI-GO-Setup-0.3.0.exe**](https://github.com/windson83/pmi-go-versoes/releases/download/v0.3.0/PMI-GO-Setup-0.3.0.exe) | Instalador (já traz o Python) | 29 MB |
-| [PMI-GO-Manual.pdf](https://github.com/windson83/pmi-go-versoes/releases/download/v0.3.0/PMI-GO-Manual.pdf) | Manual do usuário, passo a passo com telas | 363 KB |
-| [PMI-GO-Manual-Tecnico.pdf](https://github.com/windson83/pmi-go-versoes/releases/download/v0.3.0/PMI-GO-Manual-Tecnico.pdf) | Manual técnico, para a TI | 394 KB |
+| [**PMI-GO-Setup-0.4.0.exe**](https://github.com/windson83/pmi-go-versoes/releases/download/v0.4.0/PMI-GO-Setup-0.4.0.exe) | Instalador (já traz o Python) | 33 MB |
+| [PMI-GO-Instalador-sem-exe-0.4.0.zip](https://github.com/windson83/pmi-go-versoes/releases/download/v0.4.0/PMI-GO-Instalador-sem-exe-0.4.0.zip) | Instalador sem .exe (se o Windows bloquear o Setup) | 31 MB |
+| [PMI-GO-Manual.pdf](https://github.com/windson83/pmi-go-versoes/releases/download/v0.4.0/PMI-GO-Manual.pdf) | Manual do usuário, passo a passo com telas | 4 MB |
+| [PMI-GO-Manual-Tecnico.pdf](https://github.com/windson83/pmi-go-versoes/releases/download/v0.4.0/PMI-GO-Manual-Tecnico.pdf) | Manual técnico, para a TI | 414 KB |
 
-**Novidades da 0.3.0 — Atualização automática, login conferido, diagnóstico e manual**
+**Novidades da 0.4.0 — Assistente de instalação, manual com telas e página Sobre nova**
 
-- O painel avisa quando sai versão nova, mostra as novidades e atualiza com um clique. Só instala pacote com a assinatura digital do PMI-GO e o SHA-256 conferidos; se algo falhar, volta sozinho para a versão anterior.
-- Login conferido no Portal Goiás antes de salvar: uma senha errada nunca substitui a que funcionava.
-- Proteção da conta: no máximo 3 senhas recusadas a cada 15 minutos, e o painel, o Claude e a CLI param juntos de tentar.
-- Botões Sair (ninguém entra no PMI sozinho até você clicar em Entrar) e Esquecer o login deste computador.
-- Tela Diagnóstico: o que está funcionando e o que fazer, e pacote de suporte com CPF e senhas ocultos.
-- Registro do PMI-GO no Claude Desktop (inclusive o da Microsoft Store), Claude Code, Codex, Antigravity, Cursor e VS Code, com cópia de segurança da configuração.
-- Manual do usuário e manual técnico no menu Manual e em PDF (pmi-mcp manual).
-- Tela Sobre com créditos, novidades, tudo o que o PMI-GO faz e o histórico de versões; autoria no rodapé.
-- Segurança do painel: confere o endereço de cada chamada (contra páginas maliciosas) e só abre o navegador depois de provar que é o próprio painel na porta.
+- Assistente de instalação: confere o que o computador tem (navegador, cofre, login, IAs) e instala o que falta com um clique, inclusive Claude, Codex e Antigravity; depois leva você a entrar na conta e testa a IA.
+- Manual do usuário passo a passo, com a imagem de cada tela e o que fazer nela (dados fictícios).
+- Página Sobre nova, interativa: o que o PMI-GO faz, como funciona, segurança, novidades e histórico.
+- Instalador sem .exe para quando o Windows bloqueia o Setup (Controle Inteligente de Aplicativos).
+- Configurações: pastas do PMI-GO com botão para abrir; para quem publica, downloads por versão e aviso antes de vencer a validade do aviso de atualização.
+- O painel abre direto na tela indicada no endereço (ex.: /#bens), usado pelos botões do Sobre e do manual.
 
 Todas as versões: [página de versões](https://github.com/windson83/pmi-go-versoes/releases).
 
 ## Como instalar
 
-1. Baixe o **PMI-GO-Setup-0.3.0.exe** (link acima).
+1. Baixe o **PMI-GO-Setup-0.4.0.exe** (link acima).
 2. Dê dois cliques nele. Se o Windows avisar *"O Windows protegeu o computador"*, clique em **Mais informações** →
    **Executar assim mesmo**.
 3. Clique em **Avançar** até o fim. Se o computador não tiver o Python, o instalador coloca sozinho
    (não precisa ser administrador). Leva de 2 a 6 minutos.
 4. O painel abre no navegador: informe **o seu** CPF e a senha do Portal Goiás.
 5. Pronto. O atalho **PMI-GO** fica no Menu Iniciar e na Área de Trabalho.
+
+**O Windows bloqueou o Setup?** Se aparecer *"Uma política de Controle de Aplicativo bloqueou este arquivo"*
+(Controle Inteligente de Aplicativos), use o [**PMI-GO-Instalador-sem-exe-0.4.0.zip**](https://github.com/windson83/pmi-go-versoes/releases/download/v0.4.0/PMI-GO-Instalador-sem-exe-0.4.0.zip): clique com o botão direito >
+**Extrair tudo**, abra a pasta e dê dois cliques em **Instalar PMI-GO.cmd**. Instala o mesmo PMI-GO pelo Python
+oficial, que o Windows permite.
 
 ## Como atualizar
 
@@ -55,7 +58,7 @@ automática: não precisa baixá-lo.
 - O PMI-GO só se atualiza sozinho com pacote baixado desta página **e assinado digitalmente** pelo PMI-GO; se a
   instalação falhar, ele volta para a versão anterior. Nunca pede senha para atualizar.
 - Para conferir se o arquivo chegou íntegro, compare o hash SHA-256 com o `SHA256SUMS.txt` da versão
-  (PowerShell: `Get-FileHash .\PMI-GO-Setup-0.3.0.exe -Algorithm SHA256`).
+  (PowerShell: `Get-FileHash .\PMI-GO-Setup-0.4.0.exe -Algorithm SHA256`).
 
 ---
 
