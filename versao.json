@@ -1,24 +1,21 @@
 {
-  "versao": "0.6.0",
+  "versao": "0.6.1",
   "data": "2026-10-18",
-  "titulo": "Integração com o sistema KD",
+  "titulo": "Pesquisa no órgão com todos os campos e menu retrátil",
   "novidades": [
-    "Guia Integração KD: o PMI-GO vira o intermediário entre o PMI e o sistema KD da Polícia Civil.",
-    "Coleta de todas as tabelas de referência do PMI com ID (unidades, localizações, grupos, classes, espécies, marcas, estados, tipos de histórico, convênios, contas patrimoniais) e dos bens ativos de toda a Polícia Civil, devagar e em segundo plano, sem sobrecarregar o PMI.",
-    "Exportação para o KD em PostgreSQL (esquema e carga), JSON e CSV, com manifesto e conferência por SHA-256; carga completa ou só o que mudou.",
-    "Vínculos PMI ⇄ KD (de-para dos IDs) importados do KD, com conferência de conflitos.",
-    "Pendências do KD para o PMI: troca de localização gravada no PMI só com prévia e a sua confirmação; o resto aparece como \"fazer no PMI\".",
-    "Documentação completa para o time do KD (docs/INTEGRACAO_KD.md) e ferramenta pmi_integracao_estado no Claude."
+    "Pesquisa no órgão inteiro com todos os campos (localização, marca, estado de conservação, valores) de todas as unidades: o índice usa a ficha completa trazida pela coleta da Integração KD.",
+    "Filtros com sugestões dos cadastros do PMI (unidade, localização, espécie, marca) e filtro exato pelo ID; estado de conservação em lista; as escolhas aparecem como etiquetas removíveis.",
+    "Menu lateral retrátil: o botão no alto do menu deixa só os ícones e o painel lembra a escolha."
   ],
-  "pagina": "https://github.com/windson83/pmi-go-versoes/releases/tag/v0.6.0",
-  "setup": "https://github.com/windson83/pmi-go-versoes/releases/download/v0.6.0/PMI-GO-Setup-0.6.0.exe",
+  "pagina": "https://github.com/windson83/pmi-go-versoes/releases/tag/v0.6.1",
+  "setup": "https://github.com/windson83/pmi-go-versoes/releases/download/v0.6.1/PMI-GO-Setup-0.6.1.exe",
   "minima": "",
-  "pacote": "https://github.com/windson83/pmi-go-versoes/releases/download/v0.6.0/PMI-GO-atualizacao-0.6.0.bin",
-  "pacote_sha256": "87e2bc7c1fe6475e1dd49436bea09df109b6354fcc48e2f856d54177bf093e69",
-  "assinado_em": "2026-10-18T11:06:54Z",
-  "assinatura": "NoKe7mh/piGNgllprDWqGFQi9yIem6+WjsSD6aaKgj1KvQhI6WtEqBLeayL7j/fcTinA/+idRZkpDLh9PoIUAg==",
-  "setup_sha256": "602fc1fcbd290b1dab48947664438adc06ccd1ad00004347203732cf1c4128c2",
-  "assinatura_setup": "h5c9wtZWXdaQbHsYyaHkmFbfyaK1732DNcElm2z/FohMPxOSEtldrrUUA4OZTJ1qpHSls2cfnl3E/l8fLM+wAg==",
-  "expira_em": "2027-01-16T11:06:55Z",
-  "assinatura_validade": "tx4N5NuO1uh2HEoTRiATZyxHxsX/6fonE18V1CBExq7dTgs2s0Me7ar+GYvDM/5LtykP1Icpb8C9cCPaFs5KAA=="
+  "pacote": "https://github.com/windson83/pmi-go-versoes/releases/download/v0.6.1/PMI-GO-atualizacao-0.6.1.bin",
+  "pacote_sha256": "82637f989eb561a2dcd6a9a103c7656cb643a06769474eec9cb58e276affbddc",
+  "assinado_em": "2026-10-18T22:18:59Z",
+  "assinatura": "4myNupRW/BZCKaRt6DDatNBkP9k+HyiH0LiF4d1rs24V99fJsqmhs3/3IC2bD298alG3/RMEdYTDqD/cbEnvDA==",
+  "setup_sha256": "43bdf68977088566583497446771c45e39b3ca6a0dec3c14927fcb186a7911fc",
+  "assinatura_setup": "klvsZxIaRZxJEfaBWNmPtY0U8hOSeprbk03rRSpjif4SehCp5gtxLHmHlvjtBprhqQtCzWjHBX/iLJMoKaxrAA==",
+  "expira_em": "2027-01-16T22:19:00Z",
+  "assinatura_validade": "tFaCiDgpfFcs0r7mK4V0BzYcQbmtKjyrU7agV0nayXn+6CdSRo4rysZ0FInkf1eTA1Lv2p+jZCh5WWLi/lNGCw=="
 }
