@@ -1,24 +1,24 @@
 {
-  "versao": "0.5.0",
-  "data": "2026-10-16",
-  "titulo": "Pesquisa inteligente e análise de auditoria",
+  "versao": "0.6.0",
+  "data": "2026-10-18",
+  "titulo": "Integração com o sistema KD",
   "novidades": [
-    "Pesquisa inteligente: uma caixa só acha o bem em qualquer campo (descrição, marca, série, localização, nota, empenho, convênio), sem acento, por pedaço de palavra, em qualquer ordem e mesmo com erro de digitação.",
-    "Pesquisa no órgão inteiro: o PMI-GO guarda um índice no computador, atualizado em segundo plano, e responde na hora; mostra onde achou cada termo.",
-    "Análise com IA refeita: indicadores calculados da ficha de cada bem (idade, vida útil vencida, conservação, depreciação, cadastro incompleto, maiores valores, inventário comparado) e relatório de auditoria com riscos classificados, providências e limitações.",
-    "O relatório aparece formatado no painel, com gráficos, e sai em PDF institucional, Word ou HTML; conferência automática dos números e revisor sênior quando precisa.",
-    "Relatórios: planilha completa (espécie × localização, conservação, idade e vida útil, pontos de atenção) e relatório da unidade em PDF sem IA.",
-    "Claude: ferramentas novas pmi_pesquisar (pesquisa inteligente) e pmi_analise_unidade (dossiê de auditoria)."
+    "Guia Integração KD: o PMI-GO vira o intermediário entre o PMI e o sistema KD da Polícia Civil.",
+    "Coleta de todas as tabelas de referência do PMI com ID (unidades, localizações, grupos, classes, espécies, marcas, estados, tipos de histórico, convênios, contas patrimoniais) e dos bens ativos de toda a Polícia Civil, devagar e em segundo plano, sem sobrecarregar o PMI.",
+    "Exportação para o KD em PostgreSQL (esquema e carga), JSON e CSV, com manifesto e conferência por SHA-256; carga completa ou só o que mudou.",
+    "Vínculos PMI ⇄ KD (de-para dos IDs) importados do KD, com conferência de conflitos.",
+    "Pendências do KD para o PMI: troca de localização gravada no PMI só com prévia e a sua confirmação; o resto aparece como \"fazer no PMI\".",
+    "Documentação completa para o time do KD (docs/INTEGRACAO_KD.md) e ferramenta pmi_integracao_estado no Claude."
   ],
-  "pagina": "https://github.com/windson83/pmi-go-versoes/releases/tag/v0.5.0",
-  "setup": "https://github.com/windson83/pmi-go-versoes/releases/download/v0.5.0/PMI-GO-Setup-0.5.0.exe",
+  "pagina": "https://github.com/windson83/pmi-go-versoes/releases/tag/v0.6.0",
+  "setup": "https://github.com/windson83/pmi-go-versoes/releases/download/v0.6.0/PMI-GO-Setup-0.6.0.exe",
   "minima": "",
-  "pacote": "https://github.com/windson83/pmi-go-versoes/releases/download/v0.5.0/PMI-GO-atualizacao-0.5.0.bin",
-  "pacote_sha256": "31131124655670d7d08695742c4ff4f2fd962e27d78e0e5fa0729058641e1a18",
-  "assinado_em": "2026-10-16T11:47:44Z",
-  "assinatura": "SspTojBtb6Vod/04opI166Yse6ccNq9rb2IlV9+K0A8UlhuPqXrt/L3F5XLV9GyxByzFQY0a1rvT4FaJ9MNjDQ==",
-  "setup_sha256": "91b397a0738220919d8d1752d1dbc9323e1c17e0111d11df99d0ef81e1980648",
-  "assinatura_setup": "GycI5wElgP7Qw0q/TmUhYP4cxx15bkVxSwGp6g/ZUkXmV6YVhoc+J5LVTRu417Ef3lb6ATI1vRIV7K7orH6KCQ==",
-  "expira_em": "2027-01-14T11:47:44Z",
-  "assinatura_validade": "AcErXSZN8zbNsRRY0o5eIyuJ+p8n27nY2OTFmJeIXtgoFK9gJpp1TLgSX5RieJuTHmSmxJJf8BBgMmW9hTFeBw=="
+  "pacote": "https://github.com/windson83/pmi-go-versoes/releases/download/v0.6.0/PMI-GO-atualizacao-0.6.0.bin",
+  "pacote_sha256": "87e2bc7c1fe6475e1dd49436bea09df109b6354fcc48e2f856d54177bf093e69",
+  "assinado_em": "2026-10-18T11:06:54Z",
+  "assinatura": "NoKe7mh/piGNgllprDWqGFQi9yIem6+WjsSD6aaKgj1KvQhI6WtEqBLeayL7j/fcTinA/+idRZkpDLh9PoIUAg==",
+  "setup_sha256": "602fc1fcbd290b1dab48947664438adc06ccd1ad00004347203732cf1c4128c2",
+  "assinatura_setup": "h5c9wtZWXdaQbHsYyaHkmFbfyaK1732DNcElm2z/FohMPxOSEtldrrUUA4OZTJ1qpHSls2cfnl3E/l8fLM+wAg==",
+  "expira_em": "2027-01-16T11:06:55Z",
+  "assinatura_validade": "tx4N5NuO1uh2HEoTRiATZyxHxsX/6fonE18V1CBExq7dTgs2s0Me7ar+GYvDM/5LtykP1Icpb8C9cCPaFs5KAA=="
 }
