@@ -7,29 +7,29 @@ O PMI-GO é um painel no próprio computador para consultar bens, ver o patrimô
 gerar relatórios (Excel, CSV e Termo de Responsabilidade em PDF) e, se houver uma IA instalada, analisar a situação
 da unidade. **O PMI-GO só lê o PMI; movimentação só com prévia e confirmação de quem usa.**
 
-## Baixar a versão mais nova: 0.5.0
+## Baixar a versão mais nova: 0.6.0
 
 | Arquivo | Para quê | Tamanho |
 |---|---|---|
-| [**PMI-GO-Setup-0.5.0.exe**](https://github.com/windson83/pmi-go-versoes/releases/download/v0.5.0/PMI-GO-Setup-0.5.0.exe) | Instalador (já traz o Python) | 34 MB |
-| [PMI-GO-Instalador-sem-exe-0.5.0.zip](https://github.com/windson83/pmi-go-versoes/releases/download/v0.5.0/PMI-GO-Instalador-sem-exe-0.5.0.zip) | Instalador sem .exe (se o Windows bloquear o Setup) | 33 MB |
-| [PMI-GO-Manual.pdf](https://github.com/windson83/pmi-go-versoes/releases/download/v0.5.0/PMI-GO-Manual.pdf) | Manual do usuário, passo a passo com telas | 5 MB |
-| [PMI-GO-Manual-Tecnico.pdf](https://github.com/windson83/pmi-go-versoes/releases/download/v0.5.0/PMI-GO-Manual-Tecnico.pdf) | Manual técnico, para a TI | 411 KB |
+| [**PMI-GO-Setup-0.6.0.exe**](https://github.com/windson83/pmi-go-versoes/releases/download/v0.6.0/PMI-GO-Setup-0.6.0.exe) | Instalador (já traz o Python) | 36 MB |
+| [PMI-GO-Instalador-sem-exe-0.6.0.zip](https://github.com/windson83/pmi-go-versoes/releases/download/v0.6.0/PMI-GO-Instalador-sem-exe-0.6.0.zip) | Instalador sem .exe (se o Windows bloquear o Setup) | 34 MB |
+| [PMI-GO-Manual.pdf](https://github.com/windson83/pmi-go-versoes/releases/download/v0.6.0/PMI-GO-Manual.pdf) | Manual do usuário, passo a passo com telas | 6 MB |
+| [PMI-GO-Manual-Tecnico.pdf](https://github.com/windson83/pmi-go-versoes/releases/download/v0.6.0/PMI-GO-Manual-Tecnico.pdf) | Manual técnico, para a TI | 489 KB |
 
-**Novidades da 0.5.0 — Pesquisa inteligente e análise de auditoria**
+**Novidades da 0.6.0 — Integração com o sistema KD**
 
-- Pesquisa inteligente: uma caixa só acha o bem em qualquer campo (descrição, marca, série, localização, nota, empenho, convênio), sem acento, por pedaço de palavra, em qualquer ordem e mesmo com erro de digitação.
-- Pesquisa no órgão inteiro: o PMI-GO guarda um índice no computador, atualizado em segundo plano, e responde na hora; mostra onde achou cada termo.
-- Análise com IA refeita: indicadores calculados da ficha de cada bem (idade, vida útil vencida, conservação, depreciação, cadastro incompleto, maiores valores, inventário comparado) e relatório de auditoria com riscos classificados, providências e limitações.
-- O relatório aparece formatado no painel, com gráficos, e sai em PDF institucional, Word ou HTML; conferência automática dos números e revisor sênior quando precisa.
-- Relatórios: planilha completa (espécie × localização, conservação, idade e vida útil, pontos de atenção) e relatório da unidade em PDF sem IA.
-- Claude: ferramentas novas pmi_pesquisar (pesquisa inteligente) e pmi_analise_unidade (dossiê de auditoria).
+- Guia Integração KD: o PMI-GO vira o intermediário entre o PMI e o sistema KD da Polícia Civil.
+- Coleta de todas as tabelas de referência do PMI com ID (unidades, localizações, grupos, classes, espécies, marcas, estados, tipos de histórico, convênios, contas patrimoniais) e dos bens ativos de toda a Polícia Civil, devagar e em segundo plano, sem sobrecarregar o PMI.
+- Exportação para o KD em PostgreSQL (esquema e carga), JSON e CSV, com manifesto e conferência por SHA-256; carga completa ou só o que mudou.
+- Vínculos PMI ⇄ KD (de-para dos IDs) importados do KD, com conferência de conflitos.
+- Pendências do KD para o PMI: troca de localização gravada no PMI só com prévia e a sua confirmação; o resto aparece como "fazer no PMI".
+- Documentação completa para o time do KD (docs/INTEGRACAO_KD.md) e ferramenta pmi_integracao_estado no Claude.
 
 Todas as versões: [página de versões](https://github.com/windson83/pmi-go-versoes/releases).
 
 ## Como instalar
 
-1. Baixe o **PMI-GO-Setup-0.5.0.exe** (link acima).
+1. Baixe o **PMI-GO-Setup-0.6.0.exe** (link acima).
 2. Dê dois cliques nele. Se o Windows avisar *"O Windows protegeu o computador"*, clique em **Mais informações** →
    **Executar assim mesmo**.
 3. Clique em **Avançar** até o fim. Se o computador não tiver o Python, o instalador coloca sozinho
@@ -38,7 +38,7 @@ Todas as versões: [página de versões](https://github.com/windson83/pmi-go-ver
 5. Pronto. O atalho **PMI-GO** fica no Menu Iniciar e na Área de Trabalho.
 
 **O Windows bloqueou o Setup?** Se aparecer *"Uma política de Controle de Aplicativo bloqueou este arquivo"*
-(Controle Inteligente de Aplicativos), use o [**PMI-GO-Instalador-sem-exe-0.5.0.zip**](https://github.com/windson83/pmi-go-versoes/releases/download/v0.5.0/PMI-GO-Instalador-sem-exe-0.5.0.zip): clique com o botão direito >
+(Controle Inteligente de Aplicativos), use o [**PMI-GO-Instalador-sem-exe-0.6.0.zip**](https://github.com/windson83/pmi-go-versoes/releases/download/v0.6.0/PMI-GO-Instalador-sem-exe-0.6.0.zip): clique com o botão direito >
 **Extrair tudo**, abra a pasta e dê dois cliques em **Instalar PMI-GO.cmd**. Instala o mesmo PMI-GO pelo Python
 oficial, que o Windows permite.
 
@@ -58,7 +58,7 @@ automática: não precisa baixá-lo.
 - O PMI-GO só se atualiza sozinho com pacote baixado desta página **e assinado digitalmente** pelo PMI-GO; se a
   instalação falhar, ele volta para a versão anterior. Nunca pede senha para atualizar.
 - Para conferir se o arquivo chegou íntegro, compare o hash SHA-256 com o `SHA256SUMS.txt` da versão
-  (PowerShell: `Get-FileHash .\PMI-GO-Setup-0.5.0.exe -Algorithm SHA256`).
+  (PowerShell: `Get-FileHash .\PMI-GO-Setup-0.6.0.exe -Algorithm SHA256`).
 
 ---
 
