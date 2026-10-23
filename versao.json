@@ -1,21 +1,23 @@
 {
-  "versao": "0.6.1",
-  "data": "2026-10-18",
-  "titulo": "Pesquisa no órgão com todos os campos e menu retrátil",
+  "versao": "0.7.0",
+  "data": "2026-10-23",
+  "titulo": "Relatório de movimentação de bens no período",
   "novidades": [
-    "Pesquisa no órgão inteiro com todos os campos (localização, marca, estado de conservação, valores) de todas as unidades: o índice usa a ficha completa trazida pela coleta da Integração KD.",
-    "Filtros com sugestões dos cadastros do PMI (unidade, localização, espécie, marca) e filtro exato pelo ID; estado de conservação em lista; as escolhas aparecem como etiquetas removíveis.",
-    "Menu lateral retrátil: o botão no alto do menu deixa só os ícones e o painel lembra a escolha."
+    "Novo relatório em Relatórios: quais bens saíram da unidade (ou chegaram) num período — o bem, a unidade e a localização de destino, a data e onde ele está hoje — agrupado por tipo de bem, com subtotais.",
+    "Período de/até ou por meses (por exemplo junho, julho e agosto de 2026); saídas ou entradas; realizadas ou pendentes; você desmarca as informações que não quer (como o tombamento anterior).",
+    "Sai em PDF institucional, Excel (agrupado, resumo e tabela para tratar) e CSV; o nome da unidade, que o PMI corta, sai completo e as linhas repetidas pelo PMI aparecem uma vez só.",
+    "Pelo Claude: \"quais bens saíram da DTEL em julho?\" (ferramenta pmi_movimentacoes, só leitura).",
+    "O instalador e a atualização automática consertam sozinhos o pip 26.2.1, que no Windows impedia instalar ou atualizar o PMI-GO."
   ],
-  "pagina": "https://github.com/windson83/pmi-go-versoes/releases/tag/v0.6.1",
-  "setup": "https://github.com/windson83/pmi-go-versoes/releases/download/v0.6.1/PMI-GO-Setup-0.6.1.exe",
+  "pagina": "https://github.com/windson83/pmi-go-versoes/releases/tag/v0.7.0",
+  "setup": "https://github.com/windson83/pmi-go-versoes/releases/download/v0.7.0/PMI-GO-Setup-0.7.0.exe",
   "minima": "",
-  "pacote": "https://github.com/windson83/pmi-go-versoes/releases/download/v0.6.1/PMI-GO-atualizacao-0.6.1.bin",
-  "pacote_sha256": "82637f989eb561a2dcd6a9a103c7656cb643a06769474eec9cb58e276affbddc",
-  "assinado_em": "2026-10-18T22:18:59Z",
-  "assinatura": "4myNupRW/BZCKaRt6DDatNBkP9k+HyiH0LiF4d1rs24V99fJsqmhs3/3IC2bD298alG3/RMEdYTDqD/cbEnvDA==",
-  "setup_sha256": "43bdf68977088566583497446771c45e39b3ca6a0dec3c14927fcb186a7911fc",
-  "assinatura_setup": "klvsZxIaRZxJEfaBWNmPtY0U8hOSeprbk03rRSpjif4SehCp5gtxLHmHlvjtBprhqQtCzWjHBX/iLJMoKaxrAA==",
-  "expira_em": "2027-01-16T22:19:00Z",
-  "assinatura_validade": "tFaCiDgpfFcs0r7mK4V0BzYcQbmtKjyrU7agV0nayXn+6CdSRo4rysZ0FInkf1eTA1Lv2p+jZCh5WWLi/lNGCw=="
+  "pacote": "https://github.com/windson83/pmi-go-versoes/releases/download/v0.7.0/PMI-GO-atualizacao-0.7.0.bin",
+  "pacote_sha256": "9006ceafd658dbcc366e5c40ea01535162aeb8fedb71ecdb4d791a62a6a7e35b",
+  "assinado_em": "2026-10-23T14:01:25Z",
+  "assinatura": "sFNrysJk9221+0olQGj+AadXRRtfqBLJTO9sSZrMbdhaxoqHp+lTg2AVQ94A9X3zH8b2H0tWFVGbwWa2lSklCQ==",
+  "setup_sha256": "94732a2697ffe469c3b39c1eac56d1bc0c00b01cbade9e36be92b763486f0100",
+  "assinatura_setup": "0gkGKkv5qKuOUTRWjO0YFmZFI8ZrI+J6jwj/qHa/QbamRf82M4XDYtRDysI9SkzGbIs5mzLNyuszcmTH3oIcDQ==",
+  "expira_em": "2027-01-21T14:01:25Z",
+  "assinatura_validade": "7/eQqsoxkxFL0ToFZiQ0whiC8Csr5N9fLdxIoRF1ir/6MsuL6GRPiW8ZJbspGVYTFUuxL8gCPbe9iC4vfKsmAA=="
 }
