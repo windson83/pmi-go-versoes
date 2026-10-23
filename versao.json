@@ -1,23 +1,21 @@
 {
-  "versao": "0.7.1",
+  "versao": "0.7.2",
   "data": "2026-10-23",
-  "titulo": "Menu da conta, login à vista e IA local opcional",
+  "titulo": "Relatório de saídas que confere o histórico de cada bem",
   "novidades": [
-    "Clique no seu nome no canto superior direito: Sair do PMI, Entrar no PMI, trocar o login, manual, Sobre e procurar atualização, sem passar por Configurações.",
-    "Configurações mostram em destaque se há login salvo neste computador (CPF mascarado e de onde vem) ou se você saiu do PMI.",
-    "A IA local é opcional: \"Não vou usar IA local\" e, em cada IA, \"Não vou usar neste computador\". A faixa \"Para terminar a instalação\" só aparece quando falta algo essencial.",
-    "Relatório de movimentação: quando o período vem vazio, o relatório diz em que datas a unidade teve movimentação no PMI.",
-    "Instalador mais seguro: só conserta o pip quando ele tem o defeito conhecido e nunca apaga o ambiente pela metade (se algum arquivo estiver em uso, não mexe em nada)."
+    "Relatório de movimentação (saídas): confere o histórico de cada bem que passou pela unidade. O relatório do PMI atribui a saída à unidade registrada quando a movimentação foi criada; quando o bem é recolhido e encaminhado antes de chegar (caso da DI), a saída não aparecia e vinha zerado.",
+    "Nova coluna opcional \"Como saiu\" e barra de progresso enquanto o histórico é lido.",
+    "Na primeira vez numa unidade grande a leitura leva alguns minutos (a DI, uns 10); o que já foi lido fica guardado e as próximas vezes levam segundos."
   ],
-  "pagina": "https://github.com/windson83/pmi-go-versoes/releases/tag/v0.7.1",
-  "setup": "https://github.com/windson83/pmi-go-versoes/releases/download/v0.7.1/PMI-GO-Setup-0.7.1.exe",
+  "pagina": "https://github.com/windson83/pmi-go-versoes/releases/tag/v0.7.2",
+  "setup": "https://github.com/windson83/pmi-go-versoes/releases/download/v0.7.2/PMI-GO-Setup-0.7.2.exe",
   "minima": "",
-  "pacote": "https://github.com/windson83/pmi-go-versoes/releases/download/v0.7.1/PMI-GO-atualizacao-0.7.1.bin",
-  "pacote_sha256": "3e7bc442143ab704e7323cfc87091fc6ff7e89329dd6b7939c5667e6fa23b094",
-  "assinado_em": "2026-10-23T14:58:20Z",
-  "assinatura": "SIwNYomxh+GctzShL+kWpbPYzz50nGraXPlB2DEpD5Egsk0zWI/JLmsTFrVnhhdtTqEzF/I9tSPDn8OdkYblAQ==",
-  "setup_sha256": "5e80eea9939a9d04c154b6e5fc8f74426e840db80706492571b4467f85ce91fb",
-  "assinatura_setup": "ZTBr42tcW+MANkqXEr+AcF2z/PO8b3meX9amdjbCVhiFhQXxNdBaLctBOXI7tZnGukBN7GoItBHkwAWkrnOXDw==",
-  "expira_em": "2027-01-21T14:58:20Z",
-  "assinatura_validade": "SkH2BAKhWuQLFmcycvASGVr4JrqxHQzKxvUbfi8Pr+fKdFmC3O3+Zwxh0sItFzHuKaJaFrNsqQsWgkSUmj+0Bw=="
+  "pacote": "https://github.com/windson83/pmi-go-versoes/releases/download/v0.7.2/PMI-GO-atualizacao-0.7.2.bin",
+  "pacote_sha256": "cf26d7ae018e10833faeb6924d8d3b61e1ad2d2103293a09e200d94e5b27f3a8",
+  "assinado_em": "2026-10-23T15:57:10Z",
+  "assinatura": "S0405ncldMmAuXVx7ax4bLd6tqoRyQwH6ReAtyyRskCjZemw6I5TXnIjfe+JTgIYCO9RJL4zr8jR4gXHt1Y7BQ==",
+  "setup_sha256": "1b9c53f07547f546770559feddb3fccdad8321110a19cee4b99c03d88ecf4477",
+  "assinatura_setup": "59OkGafWrFhaLnr+Et9cYPS6o2GICTSasFEpYzMWoO/cI0YnkoHuxzvQs0q/lcVyU1SAvbJULyzWmK3ECu0dCg==",
+  "expira_em": "2027-01-21T15:57:11Z",
+  "assinatura_validade": "ttyJJ62g85NwFG2lmxLUcnQkBZyKpYZ/iSwhjS6o+Fe+9MsG2ZXZZrfSKvFGUbzX+GaE9qYvrHqz0dhDNOPFAw=="
 }
