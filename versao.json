@@ -1,25 +1,22 @@
 {
-  "versao": "0.8.0",
-  "data": "2026-10-23",
-  "titulo": "Livro da unidade: saídas completas, com prova real",
+  "versao": "0.8.1",
+  "data": "2026-10-24",
+  "titulo": "Relatório de movimentação: localização, aquisição e nota fiscal",
   "novidades": [
-    "Novo livro de movimentação da unidade: lê o histórico de todo bem que passou por ela — inclusive compras e doações registradas na unidade e depois distribuídas, que os relatórios do PMI não mostram.",
-    "Relatório de saídas com seções separadas: movimentação interna, externa, cessão de uso, outras mudanças de unidade e baixas (inservível, doação, leilão, furto…).",
-    "Prova real: saldo no início + entradas − saídas − baixas = saldo no fim, e a lista que o histórico dá para hoje é conferida bem a bem com a lista do PMI.",
-    "Auditoria por amostra em cada preparo: bens sorteados fora do livro são conferidos; se algum passou pela unidade, entra no livro e o relatório avisa.",
-    "Filtro por tipo de saída e opção de gerar um relatório consolidado ou um para cada tipo, cada um com cabeçalho e totais próprios.",
-    "Preparo em segundo plano com barra de andamento; \"Acompanhar esta unidade\" atualiza o livro toda madrugada (e, se quiser, também com o painel fechado, pelo agendador do Windows).",
-    "Sem o livro preparado, o relatório de saídas sai marcado como PARCIAL."
+    "Filtro por localização dentro da unidade: escolha uma, várias ou todas (saídas: de onde o bem saiu; entradas: para onde foi), e também \"não identificada\".",
+    "Filtro pela data de aquisição do bem: por ano (um ou vários) ou de/até.",
+    "Novas colunas: data de aquisição, nota fiscal (com a data) e empenho.",
+    "A localização de origem e de destino agora vem de cada movimentação interna no PMI (lida uma vez e guardada); nas baixas, a localização vem do relatório de bens baixados."
   ],
-  "pagina": "https://github.com/windson83/pmi-go-versoes/releases/tag/v0.8.0",
-  "setup": "https://github.com/windson83/pmi-go-versoes/releases/download/v0.8.0/PMI-GO-Setup-0.8.0.exe",
+  "pagina": "https://github.com/windson83/pmi-go-versoes/releases/tag/v0.8.1",
+  "setup": "https://github.com/windson83/pmi-go-versoes/releases/download/v0.8.1/PMI-GO-Setup-0.8.1.exe",
   "minima": "",
-  "pacote": "https://github.com/windson83/pmi-go-versoes/releases/download/v0.8.0/PMI-GO-atualizacao-0.8.0.bin",
-  "pacote_sha256": "004391b4a2c8a6f760bf7f5e2d21ba5629b4b79033b616b8881fbcfaaa65d2db",
-  "assinado_em": "2026-10-23T19:28:43Z",
-  "assinatura": "6EXzzsFX2B4gYZulF5JfEw+5bXGhpIKAnTds0FdFzRdi3tbLNL1fOK1Us937JxJbMQAiAbuLwLb61k1WNaxqBg==",
-  "setup_sha256": "fb2fcd54b4ea0ddd36d410bd4f1de7571b5bad8bcb9b1d6a1d065afd7c282a2d",
-  "assinatura_setup": "fPffxUfF1nqV8Cw6Tnw9BiQlp/Asxp7K2zQYFBHYTcOaSwQOVY0Zb7P0FbHID7tLpyonZ7RbQJPVIh/x2y8GCA==",
-  "expira_em": "2027-01-21T19:28:43Z",
-  "assinatura_validade": "3xCyTbzkwPF165m7XA1zHpBcICnk1QNTLLRJkA8KUkuOgfIAozF9fRRrrgs+bSrTwYrF5m6bEozjcP85ZQRZBA=="
+  "pacote": "https://github.com/windson83/pmi-go-versoes/releases/download/v0.8.1/PMI-GO-atualizacao-0.8.1.bin",
+  "pacote_sha256": "bd29aae6a5af8d4545a97813a40037f3583adba7d8c32a9f9696647191c8bdbc",
+  "assinado_em": "2026-10-24T13:17:18Z",
+  "assinatura": "ZVtJiz4ACDSj6b0+6hI3G7hei02fcj7JQDIw9i9sNN2oWM7pvxoLrklM72Gqw2J/yJxWv8SEcbfKeyX6DtS7Cg==",
+  "setup_sha256": "d9587a7014c4a9fcc5962a274b303e1e94af9902cb238e45c22ff242758063e5",
+  "assinatura_setup": "xEFQ7CDw9P3tJuziMZdOBwenv1scrNv3SXD2aUGPI5n9IMQY5RqF4XilylqxsUNKzW5FnLOl20KYH7n43nGxCQ==",
+  "expira_em": "2027-01-22T13:17:18Z",
+  "assinatura_validade": "9+MqWzZc7h5obFyyaIMatmFppv+y6uBCLFpXY/eaj4eAHPJOOHKZuhZIcNUNQfcnPQNub7/UrFwsDeTTbqkIDg=="
 }
