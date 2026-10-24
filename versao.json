@@ -1,22 +1,24 @@
 {
-  "versao": "0.8.2",
+  "versao": "0.9.0",
   "data": "2026-10-24",
-  "titulo": "Tela do relatório de movimentação mais limpa",
+  "titulo": "Painel interativo do patrimônio",
   "novidades": [
-    "Relatório de movimentação em 3 passos: 1) o que e quando; 2) filtros; 3) como apresentar.",
-    "Filtros e opções em caixas que abrem com um clique, cada uma com uma explicação curta e um resumo do que está escolhido (por exemplo, \"2 de 5\" ou \"2025\"); \"Limpar filtros\" volta tudo ao padrão.",
-    "O livro da unidade virou uma caixa com o estado à vista (preparado, preparando ou não preparado).",
-    "Ano de aquisição: os 10 anos mais recentes à vista; os anteriores em \"Anos anteriores\"."
+    "Tela Patrimônio com painel interativo (como no Power BI): clique no grupo (ex.: Bens de informática), na espécie (ex.: webcam) e veja em qual sala, setor ou estoque ela está; cada clique filtra todos os quadros.",
+    "\"Todas as unidades\": o mesmo painel no órgão inteiro, com o quadro Unidade — por exemplo, onde estão todos os rádios. Mostra o que o índice do órgão tem (lido do PMI com o seu login).",
+    "Caixa \"Procurar item\" (webcam, rádio, notebook…), faixa com os filtros escolhidos (✕ para tirar), indicadores e a lista de bens do que está filtrado, com \"Baixar planilha (CSV)\".",
+    "A lista completa do Termo de Responsabilidade continua, na aba \"Lista completa (Termo)\".",
+    "Relatório de movimentação: novo filtro Item (ex.: \"webcam; rádio\") para trazer só esses bens.",
+    "Pelo Claude: ferramenta pmi_onde_esta (onde estão hoje os bens de um item, na unidade ou no órgão) e o parâmetro itens em pmi_movimentacoes. Só leitura."
   ],
-  "pagina": "https://github.com/windson83/pmi-go-versoes/releases/tag/v0.8.2",
-  "setup": "https://github.com/windson83/pmi-go-versoes/releases/download/v0.8.2/PMI-GO-Setup-0.8.2.exe",
+  "pagina": "https://github.com/windson83/pmi-go-versoes/releases/tag/v0.9.0",
+  "setup": "https://github.com/windson83/pmi-go-versoes/releases/download/v0.9.0/PMI-GO-Setup-0.9.0.exe",
   "minima": "",
-  "pacote": "https://github.com/windson83/pmi-go-versoes/releases/download/v0.8.2/PMI-GO-atualizacao-0.8.2.bin",
-  "pacote_sha256": "5d26ce013ef9ee4e40c8da356f0c8a76bcc7027dc752c0aebe5f8d17f32a815c",
-  "assinado_em": "2026-10-24T13:37:12Z",
-  "assinatura": "gmxmMQXNDARrpVviA+jFd7ysWUCL5vgM69RbJ70rkXJ/SlBsqFYwsznAuFLoSb29q+fO9VLkOq6yhtO33afQDA==",
-  "setup_sha256": "9d343c8d0c3e6ae3bdc228abaf868ed8a382efafe5993136fd7d6c6502463c6b",
-  "assinatura_setup": "fMxcKQi6ICAzdV5TSOwOjy/8FpqYUurXtW4RhhsTzQStjroqFgKiK6MC2byXlTYn2XYl021HZK/o9rQPRAhFDQ==",
-  "expira_em": "2027-01-22T13:37:13Z",
-  "assinatura_validade": "phZHtXmxIohS/MIQKELHJ8BpJnsS04THtyMncXhI7Tivb40t0obNoh27BogGNRarD7fnQsou7npiVX3Jc0JnCw=="
+  "pacote": "https://github.com/windson83/pmi-go-versoes/releases/download/v0.9.0/PMI-GO-atualizacao-0.9.0.bin",
+  "pacote_sha256": "efdbed163416990b5a597f322fbfb2aa2daa121b04523f692326088938b4975a",
+  "assinado_em": "2026-10-24T14:51:49Z",
+  "assinatura": "GjwBWStB2DA4Lk+GLulP8LGen1rfn8jzthIWrh8XMirxeumEp7+76hRN2N9NZz2XC8Ma2cbaXm/WdKObhIv6CQ==",
+  "setup_sha256": "04d2c2a73e69ca6e1421c73b4785155259fcbe77a62387cb51d78138ba9fae6a",
+  "assinatura_setup": "OfierbXFFD5Hob4fYJUTd38JE5ss7U4z3ws0DHJqboTpGMqNDrkhrNmpyDDDbChTF4JWkeHxv5+lTGXeDMy+Bw==",
+  "expira_em": "2027-01-22T14:51:49Z",
+  "assinatura_validade": "k6s1tri9Qj2GBpcQx0/hxlHy0fng0o7Xh7Vy6T0k5w5YmKeaYp5oHthc3v7l300eJNvT2u2HrKDhdPa1dp6IDg=="
 }
