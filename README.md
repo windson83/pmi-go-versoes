@@ -7,27 +7,29 @@ O PMI-GO é um painel no próprio computador para consultar bens, ver o patrimô
 gerar relatórios (Excel, CSV e Termo de Responsabilidade em PDF) e, se houver uma IA instalada, analisar a situação
 da unidade. **O PMI-GO só lê o PMI; movimentação só com prévia e confirmação de quem usa.**
 
-## Baixar a versão mais nova: 0.8.2
+## Baixar a versão mais nova: 0.9.0
 
 | Arquivo | Para quê | Tamanho |
 |---|---|---|
-| [**PMI-GO-Setup-0.8.2.exe**](https://github.com/windson83/pmi-go-versoes/releases/download/v0.8.2/PMI-GO-Setup-0.8.2.exe) | Instalador (já traz o Python) | 37 MB |
-| [PMI-GO-Instalador-sem-exe-0.8.2.zip](https://github.com/windson83/pmi-go-versoes/releases/download/v0.8.2/PMI-GO-Instalador-sem-exe-0.8.2.zip) | Instalador sem .exe (se o Windows bloquear o Setup) | 35 MB |
-| [PMI-GO-Manual.pdf](https://github.com/windson83/pmi-go-versoes/releases/download/v0.8.2/PMI-GO-Manual.pdf) | Manual do usuário, passo a passo com telas | 6 MB |
-| [PMI-GO-Manual-Tecnico.pdf](https://github.com/windson83/pmi-go-versoes/releases/download/v0.8.2/PMI-GO-Manual-Tecnico.pdf) | Manual técnico, para a TI | 587 KB |
+| [**PMI-GO-Setup-0.9.0.exe**](https://github.com/windson83/pmi-go-versoes/releases/download/v0.9.0/PMI-GO-Setup-0.9.0.exe) | Instalador (já traz o Python) | 37 MB |
+| [PMI-GO-Instalador-sem-exe-0.9.0.zip](https://github.com/windson83/pmi-go-versoes/releases/download/v0.9.0/PMI-GO-Instalador-sem-exe-0.9.0.zip) | Instalador sem .exe (se o Windows bloquear o Setup) | 35 MB |
+| [PMI-GO-Manual.pdf](https://github.com/windson83/pmi-go-versoes/releases/download/v0.9.0/PMI-GO-Manual.pdf) | Manual do usuário, passo a passo com telas | 7 MB |
+| [PMI-GO-Manual-Tecnico.pdf](https://github.com/windson83/pmi-go-versoes/releases/download/v0.9.0/PMI-GO-Manual-Tecnico.pdf) | Manual técnico, para a TI | 594 KB |
 
-**Novidades da 0.8.2 — Tela do relatório de movimentação mais limpa**
+**Novidades da 0.9.0 — Painel interativo do patrimônio**
 
-- Relatório de movimentação em 3 passos: 1) o que e quando; 2) filtros; 3) como apresentar.
-- Filtros e opções em caixas que abrem com um clique, cada uma com uma explicação curta e um resumo do que está escolhido (por exemplo, "2 de 5" ou "2025"); "Limpar filtros" volta tudo ao padrão.
-- O livro da unidade virou uma caixa com o estado à vista (preparado, preparando ou não preparado).
-- Ano de aquisição: os 10 anos mais recentes à vista; os anteriores em "Anos anteriores".
+- Tela Patrimônio com painel interativo (como no Power BI): clique no grupo (ex.: Bens de informática), na espécie (ex.: webcam) e veja em qual sala, setor ou estoque ela está; cada clique filtra todos os quadros.
+- "Todas as unidades": o mesmo painel no órgão inteiro, com o quadro Unidade — por exemplo, onde estão todos os rádios. Mostra o que o índice do órgão tem (lido do PMI com o seu login).
+- Caixa "Procurar item" (webcam, rádio, notebook…), faixa com os filtros escolhidos (✕ para tirar), indicadores e a lista de bens do que está filtrado, com "Baixar planilha (CSV)".
+- A lista completa do Termo de Responsabilidade continua, na aba "Lista completa (Termo)".
+- Relatório de movimentação: novo filtro Item (ex.: "webcam; rádio") para trazer só esses bens.
+- Pelo Claude: ferramenta pmi_onde_esta (onde estão hoje os bens de um item, na unidade ou no órgão) e o parâmetro itens em pmi_movimentacoes. Só leitura.
 
 Todas as versões: [página de versões](https://github.com/windson83/pmi-go-versoes/releases).
 
 ## Como instalar
 
-1. Baixe o **PMI-GO-Setup-0.8.2.exe** (link acima).
+1. Baixe o **PMI-GO-Setup-0.9.0.exe** (link acima).
 2. Dê dois cliques nele. Se o Windows avisar *"O Windows protegeu o computador"*, clique em **Mais informações** →
    **Executar assim mesmo**.
 3. Clique em **Avançar** até o fim. Se o computador não tiver o Python, o instalador coloca sozinho
@@ -36,7 +38,7 @@ Todas as versões: [página de versões](https://github.com/windson83/pmi-go-ver
 5. Pronto. O atalho **PMI-GO** fica no Menu Iniciar e na Área de Trabalho.
 
 **O Windows bloqueou o Setup?** Se aparecer *"Uma política de Controle de Aplicativo bloqueou este arquivo"*
-(Controle Inteligente de Aplicativos), use o [**PMI-GO-Instalador-sem-exe-0.8.2.zip**](https://github.com/windson83/pmi-go-versoes/releases/download/v0.8.2/PMI-GO-Instalador-sem-exe-0.8.2.zip): clique com o botão direito >
+(Controle Inteligente de Aplicativos), use o [**PMI-GO-Instalador-sem-exe-0.9.0.zip**](https://github.com/windson83/pmi-go-versoes/releases/download/v0.9.0/PMI-GO-Instalador-sem-exe-0.9.0.zip): clique com o botão direito >
 **Extrair tudo**, abra a pasta e dê dois cliques em **Instalar PMI-GO.cmd**. Instala o mesmo PMI-GO pelo Python
 oficial, que o Windows permite.
 
@@ -56,7 +58,7 @@ automática: não precisa baixá-lo.
 - O PMI-GO só se atualiza sozinho com pacote baixado desta página **e assinado digitalmente** pelo PMI-GO; se a
   instalação falhar, ele volta para a versão anterior. Nunca pede senha para atualizar.
 - Para conferir se o arquivo chegou íntegro, compare o hash SHA-256 com o `SHA256SUMS.txt` da versão
-  (PowerShell: `Get-FileHash .\PMI-GO-Setup-0.8.2.exe -Algorithm SHA256`).
+  (PowerShell: `Get-FileHash .\PMI-GO-Setup-0.9.0.exe -Algorithm SHA256`).
 
 ---
 
