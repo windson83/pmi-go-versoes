@@ -12,7 +12,6 @@ da unidade. **O PMI-GO só lê o PMI; movimentação só com prévia e confirma�
 | Arquivo | Para quê | Tamanho |
 |---|---|---|
 | [**PMI-GO-Setup-0.9.0.exe**](https://github.com/windson83/pmi-go-versoes/releases/download/v0.9.0/PMI-GO-Setup-0.9.0.exe) | Instalador (já traz o Python) | 37 MB |
-| [PMI-GO-Instalador-sem-exe-0.9.0.zip](https://github.com/windson83/pmi-go-versoes/releases/download/v0.9.0/PMI-GO-Instalador-sem-exe-0.9.0.zip) | Instalador sem .exe (se o Windows bloquear o Setup) | 35 MB |
 | [PMI-GO-Manual.pdf](https://github.com/windson83/pmi-go-versoes/releases/download/v0.9.0/PMI-GO-Manual.pdf) | Manual do usuário, passo a passo com telas | 7 MB |
 | [PMI-GO-Manual-Tecnico.pdf](https://github.com/windson83/pmi-go-versoes/releases/download/v0.9.0/PMI-GO-Manual-Tecnico.pdf) | Manual técnico, para a TI | 594 KB |
 
@@ -38,9 +37,8 @@ Todas as versões: [página de versões](https://github.com/windson83/pmi-go-ver
 5. Pronto. O atalho **PMI-GO** fica no Menu Iniciar e na Área de Trabalho.
 
 **O Windows bloqueou o Setup?** Se aparecer *"Uma política de Controle de Aplicativo bloqueou este arquivo"*
-(Controle Inteligente de Aplicativos), use o [**PMI-GO-Instalador-sem-exe-0.9.0.zip**](https://github.com/windson83/pmi-go-versoes/releases/download/v0.9.0/PMI-GO-Instalador-sem-exe-0.9.0.zip): clique com o botão direito >
-**Extrair tudo**, abra a pasta e dê dois cliques em **Instalar PMI-GO.cmd**. Instala o mesmo PMI-GO pelo Python
-oficial, que o Windows permite.
+(Controle Inteligente de Aplicativos), fale com o suporte (contato no fim da página): há um instalador alternativo,
+entregue sob pedido.
 
 ## Como atualizar
 
