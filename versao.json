@@ -1,24 +1,24 @@
 {
-  "versao": "0.9.0",
-  "data": "2026-10-24",
-  "titulo": "Painel interativo do patrimônio",
+  "versao": "0.10.0",
+  "data": "2026-11-24",
+  "titulo": "Pesquisa por nota fiscal e tipo de bem clicando",
   "novidades": [
-    "Tela Patrimônio com painel interativo (como no Power BI): clique no grupo (ex.: Bens de informática), na espécie (ex.: webcam) e veja em qual sala, setor ou estoque ela está; cada clique filtra todos os quadros.",
-    "\"Todas as unidades\": o mesmo painel no órgão inteiro, com o quadro Unidade — por exemplo, onde estão todos os rádios. Mostra o que o índice do órgão tem (lido do PMI com o seu login).",
-    "Caixa \"Procurar item\" (webcam, rádio, notebook…), faixa com os filtros escolhidos (✕ para tirar), indicadores e a lista de bens do que está filtrado, com \"Baixar planilha (CSV)\".",
-    "A lista completa do Termo de Responsabilidade continua, na aba \"Lista completa (Termo)\".",
-    "Relatório de movimentação: novo filtro Item (ex.: \"webcam; rádio\") para trazer só esses bens.",
-    "Pelo Claude: ferramenta pmi_onde_esta (onde estão hoje os bens de um item, na unidade ou no órgão) e o parâmetro itens em pmi_movimentacoes. Só leitura."
+    "Consultar bens: campo Nota fiscal — todos os bens da mesma nota, na sua unidade, em várias unidades ou no órgão inteiro, com ou sem pontos e zeros na frente (20.943 = 020943).",
+    "Resumo da nota em cima da lista: data, série, bens, unidades, espécies, valor de aquisição e empenho; se o mesmo número for de compras diferentes, escolha a nota certa com um clique.",
+    "Botão Tipo de bem: grupo → classe → espécie em três colunas, com quantos bens cada um tem; marque uma espécie (ex.: cadeira giratória), uma classe ou um grupo inteiro — ou procure pelo nome. A etiqueta mostra o caminho (grupo › classe).",
+    "Unidade(s): a caixa das unidades fica à vista, para escolher uma ou várias; no órgão inteiro, os botões \"unidade …\" de Refinar levam a pesquisa para a unidade clicada. \"Limpar tudo\" ao lado das etiquetas.",
+    "O filtro por espécie, grupo ou classe também acha os bens que vieram só da lista do órgão (sem o código da espécie).",
+    "Pelo Claude: pmi_pesquisar ganhou nota_fiscal, nota_data, grupo, classe e especie; pmi_tipos_de_bem lista grupos, classes e espécies. Só leitura."
   ],
-  "pagina": "https://github.com/windson83/pmi-go-versoes/releases/tag/v0.9.0",
-  "setup": "https://github.com/windson83/pmi-go-versoes/releases/download/v0.9.0/PMI-GO-Setup-0.9.0.exe",
+  "pagina": "https://github.com/windson83/pmi-go-versoes/releases/tag/v0.10.0",
+  "setup": "https://github.com/windson83/pmi-go-versoes/releases/download/v0.10.0/PMI-GO-Setup-0.10.0.exe",
   "minima": "",
-  "pacote": "https://github.com/windson83/pmi-go-versoes/releases/download/v0.9.0/PMI-GO-atualizacao-0.9.0.bin",
-  "pacote_sha256": "efdbed163416990b5a597f322fbfb2aa2daa121b04523f692326088938b4975a",
-  "assinado_em": "2026-10-24T14:51:49Z",
-  "assinatura": "GjwBWStB2DA4Lk+GLulP8LGen1rfn8jzthIWrh8XMirxeumEp7+76hRN2N9NZz2XC8Ma2cbaXm/WdKObhIv6CQ==",
-  "setup_sha256": "04d2c2a73e69ca6e1421c73b4785155259fcbe77a62387cb51d78138ba9fae6a",
-  "assinatura_setup": "OfierbXFFD5Hob4fYJUTd38JE5ss7U4z3ws0DHJqboTpGMqNDrkhrNmpyDDDbChTF4JWkeHxv5+lTGXeDMy+Bw==",
-  "expira_em": "2027-01-22T14:51:49Z",
-  "assinatura_validade": "k6s1tri9Qj2GBpcQx0/hxlHy0fng0o7Xh7Vy6T0k5w5YmKeaYp5oHthc3v7l300eJNvT2u2HrKDhdPa1dp6IDg=="
+  "pacote": "https://github.com/windson83/pmi-go-versoes/releases/download/v0.10.0/PMI-GO-atualizacao-0.10.0.bin",
+  "pacote_sha256": "c30ed046e6b634c7a821bfc11a77fd4d4f9bf86eff6ec3b0dae149fcb7cd9ed8",
+  "assinado_em": "2026-11-24T12:18:15Z",
+  "assinatura": "CIcz6jvDH+6/Mg9YEoC2epBgTNNA1NoeCAJi58OrovdkSsp3XzvXcV4zjOZ09WZoULP2375faxmi2oMam3NsBQ==",
+  "setup_sha256": "81e2768428597f4d15af73675c2068ebdd9d800a9bad091d2f252a454ac8582c",
+  "assinatura_setup": "H2PEuEoR+zGvKJcFJJU+NTZWdWYlB/MUY5+dfmNzqCfsrt4FENm63IDLAVxTXeNHtOLEhhD4I5WIsK05ORMTAA==",
+  "expira_em": "2027-02-22T12:18:15Z",
+  "assinatura_validade": "mdihtWj8w9Kcc5RNQHVHN1UKBKoQ8KKGj9xg26mz45D4Dk3+X/nm0ZHYqt9EZQ2w/QaiYHRSzqKzu4O/K/iTBw=="
 }
