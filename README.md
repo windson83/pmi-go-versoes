@@ -7,28 +7,27 @@ O PMI-GO é um painel no próprio computador para consultar bens, ver o patrimô
 gerar relatórios (Excel, CSV e Termo de Responsabilidade em PDF) e, se houver uma IA instalada, analisar a situação
 da unidade. **O PMI-GO só lê o PMI; movimentação só com prévia e confirmação de quem usa.**
 
-## Baixar a versão mais nova: 0.10.0
+## Baixar a versão mais nova: 0.11.0
 
 | Arquivo | Para quê | Tamanho |
 |---|---|---|
-| [**PMI-GO-Setup-0.10.0.exe**](https://github.com/windson83/pmi-go-versoes/releases/download/v0.10.0/PMI-GO-Setup-0.10.0.exe) | Instalador (já traz o Python) | 37 MB |
-| [PMI-GO-Manual.pdf](https://github.com/windson83/pmi-go-versoes/releases/download/v0.10.0/PMI-GO-Manual.pdf) | Manual do usuário, passo a passo com telas | 7 MB |
-| [PMI-GO-Manual-Tecnico.pdf](https://github.com/windson83/pmi-go-versoes/releases/download/v0.10.0/PMI-GO-Manual-Tecnico.pdf) | Manual técnico, para a TI | 621 KB |
+| [**PMI-GO-Setup-0.11.0.exe**](https://github.com/windson83/pmi-go-versoes/releases/download/v0.11.0/PMI-GO-Setup-0.11.0.exe) | Instalador (já traz o Python) | 38 MB |
+| [PMI-GO-Manual.pdf](https://github.com/windson83/pmi-go-versoes/releases/download/v0.11.0/PMI-GO-Manual.pdf) | Manual do usuário, passo a passo com telas | 7 MB |
+| [PMI-GO-Manual-Tecnico.pdf](https://github.com/windson83/pmi-go-versoes/releases/download/v0.11.0/PMI-GO-Manual-Tecnico.pdf) | Manual técnico, para a TI | 624 KB |
 
-**Novidades da 0.10.0 — Pesquisa por nota fiscal e tipo de bem clicando**
+**Novidades da 0.11.0 — Relatório de uma nota fiscal**
 
-- Consultar bens: campo Nota fiscal — todos os bens da mesma nota, na sua unidade, em várias unidades ou no órgão inteiro, com ou sem pontos e zeros na frente (20.943 = 020943).
-- Resumo da nota em cima da lista: data, série, bens, unidades, espécies, valor de aquisição e empenho; se o mesmo número for de compras diferentes, escolha a nota certa com um clique.
-- Botão Tipo de bem: grupo → classe → espécie em três colunas, com quantos bens cada um tem; marque uma espécie (ex.: cadeira giratória), uma classe ou um grupo inteiro — ou procure pelo nome. A etiqueta mostra o caminho (grupo › classe).
-- Unidade(s): a caixa das unidades fica à vista, para escolher uma ou várias; no órgão inteiro, os botões "unidade …" de Refinar levam a pesquisa para a unidade clicada. "Limpar tudo" ao lado das etiquetas.
-- O filtro por espécie, grupo ou classe também acha os bens que vieram só da lista do órgão (sem o código da espécie).
-- Pelo Claude: pmi_pesquisar ganhou nota_fiscal, nota_data, grupo, classe e especie; pmi_tipos_de_bem lista grupos, classes e espécies. Só leitura.
+- Relatórios e arquivos: novo relatório de uma nota fiscal — todos os bens da nota, onde cada um está hoje (unidade e localização) e o caminho de cada um, com data, nº da movimentação, unidade e sala de destino.
+- Na sua unidade, em várias ou no órgão inteiro; Procurar a nota mostra as notas com esse número (compras diferentes) para escolher uma ou todas.
+- Agrupar por unidade onde está hoje, localização ou tipo de bem; situação todas ou só ativos; com ou sem o histórico de movimentação (o lido fica guardado e as próximas vezes são rápidas).
+- PDF, Excel (abas Bens da nota, Movimentações, por unidade, localização, espécie e situação) e CSV.
+- Pelo Claude: ferramenta pmi_relatorio_nota. Só leitura.
 
 Todas as versões: [página de versões](https://github.com/windson83/pmi-go-versoes/releases).
 
 ## Como instalar
 
-1. Baixe o **PMI-GO-Setup-0.10.0.exe** (link acima).
+1. Baixe o **PMI-GO-Setup-0.11.0.exe** (link acima).
 2. Dê dois cliques nele. Se o Windows avisar *"O Windows protegeu o computador"*, clique em **Mais informações** →
    **Executar assim mesmo**.
 3. Clique em **Avançar** até o fim. Se o computador não tiver o Python, o instalador coloca sozinho
@@ -56,7 +55,7 @@ automática: não precisa baixá-lo.
 - O PMI-GO só se atualiza sozinho com pacote baixado desta página **e assinado digitalmente** pelo PMI-GO; se a
   instalação falhar, ele volta para a versão anterior. Nunca pede senha para atualizar.
 - Para conferir se o arquivo chegou íntegro, compare o hash SHA-256 com o `SHA256SUMS.txt` da versão
-  (PowerShell: `Get-FileHash .\PMI-GO-Setup-0.10.0.exe -Algorithm SHA256`).
+  (PowerShell: `Get-FileHash .\PMI-GO-Setup-0.11.0.exe -Algorithm SHA256`).
 
 ---
 
