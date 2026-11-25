@@ -1,23 +1,23 @@
 {
-  "versao": "0.11.0",
+  "versao": "0.11.1",
   "data": "2026-11-25",
-  "titulo": "Relatório de uma nota fiscal",
+  "titulo": "Relatórios em abas e filtros de clicar na nota fiscal",
   "novidades": [
-    "Relatórios e arquivos: novo relatório de uma nota fiscal — todos os bens da nota, onde cada um está hoje (unidade e localização) e o caminho de cada um, com data, nº da movimentação, unidade e sala de destino.",
-    "Na sua unidade, em várias ou no órgão inteiro; Procurar a nota mostra as notas com esse número (compras diferentes) para escolher uma ou todas.",
-    "Agrupar por unidade onde está hoje, localização ou tipo de bem; situação todas ou só ativos; com ou sem o histórico de movimentação (o lido fica guardado e as próximas vezes são rápidas).",
-    "PDF, Excel (abas Bens da nota, Movimentações, por unidade, localização, espécie e situação) e CSV.",
-    "Pelo Claude: ferramenta pmi_relatorio_nota. Só leitura."
+    "Relatórios e arquivos em três abas, uma para cada tipo: Patrimônio da unidade, Movimentação no período e Nota fiscal (a última usada fica aberta). O campo Unidade só aparece onde vale.",
+    "Nota fiscal com os 3 passos do relatório de movimentação: depois de Procurar a nota, os filtros mostram o que existe nela (unidade onde está hoje, tipo de bem, sala, situação, ano de aquisição) com quantos bens tem cada um, para só marcar ou desmarcar; também item e data de aquisição.",
+    "Contagem na hora: \"Com os filtros: 84 de 294 bens\"; a contagem de cada opção já considera os outros filtros. O que fica de fora nem tem o histórico lido (mais rápido).",
+    "Colunas escolhidas (o tombamento sempre aparece), as mesmas na tela, no PDF, no Excel e no CSV.",
+    "Pelo Claude: pmi_relatorio_nota aceita itens, espécies, unidades onde está hoje, anos de aquisição e colunas."
   ],
-  "pagina": "https://github.com/windson83/pmi-go-versoes/releases/tag/v0.11.0",
-  "setup": "https://github.com/windson83/pmi-go-versoes/releases/download/v0.11.0/PMI-GO-Setup-0.11.0.exe",
+  "pagina": "https://github.com/windson83/pmi-go-versoes/releases/tag/v0.11.1",
+  "setup": "https://github.com/windson83/pmi-go-versoes/releases/download/v0.11.1/PMI-GO-Setup-0.11.1.exe",
   "minima": "",
-  "pacote": "https://github.com/windson83/pmi-go-versoes/releases/download/v0.11.0/PMI-GO-atualizacao-0.11.0.bin",
-  "pacote_sha256": "ce61afbcbd49cecc29185abf8cff195c51b1b0ade7b37e83148dcd525f75a108",
-  "assinado_em": "2026-11-25T13:02:58Z",
-  "assinatura": "LZWc9c3JwdAZ7eu9Sh7EcsaokwP8q1Palko4NTBS3+D19lcq9NIDjWK6Ulivgv+D69nu35UrZ9oAxtc//y7pCA==",
-  "setup_sha256": "3d947e6576e8cbc9903a2ae713c44694a9281dded36565db4bb5f139a0762408",
-  "assinatura_setup": "+RMJ31ZdkN8FAfHITW0XmvZe1ceK2AeEdmRSgcSnuALQsrubvbGJ+UgibmimooOoqutyYha9RH5AIfVRgzDmBQ==",
-  "expira_em": "2027-02-23T13:02:58Z",
-  "assinatura_validade": "BLcagH0H+kgt+GsX89unwr9f2mrKlct9WUK6+MjcyL8msmULMyX+n6HTUNJRGf9XklpZmb56pbrggXfR96JbCg=="
+  "pacote": "https://github.com/windson83/pmi-go-versoes/releases/download/v0.11.1/PMI-GO-atualizacao-0.11.1.bin",
+  "pacote_sha256": "b8389a12fc2a0788487f575b18469ebe1a97802551b413ce4ef2a1f2b2605b46",
+  "assinado_em": "2026-11-25T13:35:36Z",
+  "assinatura": "4jQxLG5OHy4t4r/kjhFO6M3M47dqvN/lhlsdT/upSHMV0aZxcy3FeJPQcYQxTky1Ubfc7/91/L1Yu78EkQgXDA==",
+  "setup_sha256": "4f36ecfab11df5f1c962546f23fff798c99255ad38a15a2977673831d6787c74",
+  "assinatura_setup": "cKSJc1QsXWcpr97B6Evka/gseMFO83DN3zSqKnfNXs1pBmtz28xLDOFzPZVSz8A4IIshAaPdB0g/U83je3ciBg==",
+  "expira_em": "2027-02-23T13:35:36Z",
+  "assinatura_validade": "AS0Ltm9GBauiDC7fDc5gA5NLfd7gD4TDWW0knf9yowPUdpRlaUdQl9HafjOthJ9yTZoYSVV6m42wB/3IhdETAw=="
 }
