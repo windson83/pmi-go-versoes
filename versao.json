@@ -1,24 +1,23 @@
 {
-  "versao": "0.10.0",
-  "data": "2026-11-24",
-  "titulo": "Pesquisa por nota fiscal e tipo de bem clicando",
+  "versao": "0.11.0",
+  "data": "2026-11-25",
+  "titulo": "Relatório de uma nota fiscal",
   "novidades": [
-    "Consultar bens: campo Nota fiscal — todos os bens da mesma nota, na sua unidade, em várias unidades ou no órgão inteiro, com ou sem pontos e zeros na frente (20.943 = 020943).",
-    "Resumo da nota em cima da lista: data, série, bens, unidades, espécies, valor de aquisição e empenho; se o mesmo número for de compras diferentes, escolha a nota certa com um clique.",
-    "Botão Tipo de bem: grupo → classe → espécie em três colunas, com quantos bens cada um tem; marque uma espécie (ex.: cadeira giratória), uma classe ou um grupo inteiro — ou procure pelo nome. A etiqueta mostra o caminho (grupo › classe).",
-    "Unidade(s): a caixa das unidades fica à vista, para escolher uma ou várias; no órgão inteiro, os botões \"unidade …\" de Refinar levam a pesquisa para a unidade clicada. \"Limpar tudo\" ao lado das etiquetas.",
-    "O filtro por espécie, grupo ou classe também acha os bens que vieram só da lista do órgão (sem o código da espécie).",
-    "Pelo Claude: pmi_pesquisar ganhou nota_fiscal, nota_data, grupo, classe e especie; pmi_tipos_de_bem lista grupos, classes e espécies. Só leitura."
+    "Relatórios e arquivos: novo relatório de uma nota fiscal — todos os bens da nota, onde cada um está hoje (unidade e localização) e o caminho de cada um, com data, nº da movimentação, unidade e sala de destino.",
+    "Na sua unidade, em várias ou no órgão inteiro; Procurar a nota mostra as notas com esse número (compras diferentes) para escolher uma ou todas.",
+    "Agrupar por unidade onde está hoje, localização ou tipo de bem; situação todas ou só ativos; com ou sem o histórico de movimentação (o lido fica guardado e as próximas vezes são rápidas).",
+    "PDF, Excel (abas Bens da nota, Movimentações, por unidade, localização, espécie e situação) e CSV.",
+    "Pelo Claude: ferramenta pmi_relatorio_nota. Só leitura."
   ],
-  "pagina": "https://github.com/windson83/pmi-go-versoes/releases/tag/v0.10.0",
-  "setup": "https://github.com/windson83/pmi-go-versoes/releases/download/v0.10.0/PMI-GO-Setup-0.10.0.exe",
+  "pagina": "https://github.com/windson83/pmi-go-versoes/releases/tag/v0.11.0",
+  "setup": "https://github.com/windson83/pmi-go-versoes/releases/download/v0.11.0/PMI-GO-Setup-0.11.0.exe",
   "minima": "",
-  "pacote": "https://github.com/windson83/pmi-go-versoes/releases/download/v0.10.0/PMI-GO-atualizacao-0.10.0.bin",
-  "pacote_sha256": "c30ed046e6b634c7a821bfc11a77fd4d4f9bf86eff6ec3b0dae149fcb7cd9ed8",
-  "assinado_em": "2026-11-24T12:18:15Z",
-  "assinatura": "CIcz6jvDH+6/Mg9YEoC2epBgTNNA1NoeCAJi58OrovdkSsp3XzvXcV4zjOZ09WZoULP2375faxmi2oMam3NsBQ==",
-  "setup_sha256": "81e2768428597f4d15af73675c2068ebdd9d800a9bad091d2f252a454ac8582c",
-  "assinatura_setup": "H2PEuEoR+zGvKJcFJJU+NTZWdWYlB/MUY5+dfmNzqCfsrt4FENm63IDLAVxTXeNHtOLEhhD4I5WIsK05ORMTAA==",
-  "expira_em": "2027-02-22T12:18:15Z",
-  "assinatura_validade": "mdihtWj8w9Kcc5RNQHVHN1UKBKoQ8KKGj9xg26mz45D4Dk3+X/nm0ZHYqt9EZQ2w/QaiYHRSzqKzu4O/K/iTBw=="
+  "pacote": "https://github.com/windson83/pmi-go-versoes/releases/download/v0.11.0/PMI-GO-atualizacao-0.11.0.bin",
+  "pacote_sha256": "ce61afbcbd49cecc29185abf8cff195c51b1b0ade7b37e83148dcd525f75a108",
+  "assinado_em": "2026-11-25T13:02:58Z",
+  "assinatura": "LZWc9c3JwdAZ7eu9Sh7EcsaokwP8q1Palko4NTBS3+D19lcq9NIDjWK6Ulivgv+D69nu35UrZ9oAxtc//y7pCA==",
+  "setup_sha256": "3d947e6576e8cbc9903a2ae713c44694a9281dded36565db4bb5f139a0762408",
+  "assinatura_setup": "+RMJ31ZdkN8FAfHITW0XmvZe1ceK2AeEdmRSgcSnuALQsrubvbGJ+UgibmimooOoqutyYha9RH5AIfVRgzDmBQ==",
+  "expira_em": "2027-02-23T13:02:58Z",
+  "assinatura_validade": "BLcagH0H+kgt+GsX89unwr9f2mrKlct9WUK6+MjcyL8msmULMyX+n6HTUNJRGf9XklpZmb56pbrggXfR96JbCg=="
 }
