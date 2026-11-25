@@ -7,27 +7,27 @@ O PMI-GO é um painel no próprio computador para consultar bens, ver o patrimô
 gerar relatórios (Excel, CSV e Termo de Responsabilidade em PDF) e, se houver uma IA instalada, analisar a situação
 da unidade. **O PMI-GO só lê o PMI; movimentação só com prévia e confirmação de quem usa.**
 
-## Baixar a versão mais nova: 0.11.0
+## Baixar a versão mais nova: 0.11.1
 
 | Arquivo | Para quê | Tamanho |
 |---|---|---|
-| [**PMI-GO-Setup-0.11.0.exe**](https://github.com/windson83/pmi-go-versoes/releases/download/v0.11.0/PMI-GO-Setup-0.11.0.exe) | Instalador (já traz o Python) | 38 MB |
-| [PMI-GO-Manual.pdf](https://github.com/windson83/pmi-go-versoes/releases/download/v0.11.0/PMI-GO-Manual.pdf) | Manual do usuário, passo a passo com telas | 7 MB |
-| [PMI-GO-Manual-Tecnico.pdf](https://github.com/windson83/pmi-go-versoes/releases/download/v0.11.0/PMI-GO-Manual-Tecnico.pdf) | Manual técnico, para a TI | 624 KB |
+| [**PMI-GO-Setup-0.11.1.exe**](https://github.com/windson83/pmi-go-versoes/releases/download/v0.11.1/PMI-GO-Setup-0.11.1.exe) | Instalador (já traz o Python) | 38 MB |
+| [PMI-GO-Manual.pdf](https://github.com/windson83/pmi-go-versoes/releases/download/v0.11.1/PMI-GO-Manual.pdf) | Manual do usuário, passo a passo com telas | 7 MB |
+| [PMI-GO-Manual-Tecnico.pdf](https://github.com/windson83/pmi-go-versoes/releases/download/v0.11.1/PMI-GO-Manual-Tecnico.pdf) | Manual técnico, para a TI | 629 KB |
 
-**Novidades da 0.11.0 — Relatório de uma nota fiscal**
+**Novidades da 0.11.1 — Relatórios em abas e filtros de clicar na nota fiscal**
 
-- Relatórios e arquivos: novo relatório de uma nota fiscal — todos os bens da nota, onde cada um está hoje (unidade e localização) e o caminho de cada um, com data, nº da movimentação, unidade e sala de destino.
-- Na sua unidade, em várias ou no órgão inteiro; Procurar a nota mostra as notas com esse número (compras diferentes) para escolher uma ou todas.
-- Agrupar por unidade onde está hoje, localização ou tipo de bem; situação todas ou só ativos; com ou sem o histórico de movimentação (o lido fica guardado e as próximas vezes são rápidas).
-- PDF, Excel (abas Bens da nota, Movimentações, por unidade, localização, espécie e situação) e CSV.
-- Pelo Claude: ferramenta pmi_relatorio_nota. Só leitura.
+- Relatórios e arquivos em três abas, uma para cada tipo: Patrimônio da unidade, Movimentação no período e Nota fiscal (a última usada fica aberta). O campo Unidade só aparece onde vale.
+- Nota fiscal com os 3 passos do relatório de movimentação: depois de Procurar a nota, os filtros mostram o que existe nela (unidade onde está hoje, tipo de bem, sala, situação, ano de aquisição) com quantos bens tem cada um, para só marcar ou desmarcar; também item e data de aquisição.
+- Contagem na hora: "Com os filtros: 84 de 294 bens"; a contagem de cada opção já considera os outros filtros. O que fica de fora nem tem o histórico lido (mais rápido).
+- Colunas escolhidas (o tombamento sempre aparece), as mesmas na tela, no PDF, no Excel e no CSV.
+- Pelo Claude: pmi_relatorio_nota aceita itens, espécies, unidades onde está hoje, anos de aquisição e colunas.
 
 Todas as versões: [página de versões](https://github.com/windson83/pmi-go-versoes/releases).
 
 ## Como instalar
 
-1. Baixe o **PMI-GO-Setup-0.11.0.exe** (link acima).
+1. Baixe o **PMI-GO-Setup-0.11.1.exe** (link acima).
 2. Dê dois cliques nele. Se o Windows avisar *"O Windows protegeu o computador"*, clique em **Mais informações** →
    **Executar assim mesmo**.
 3. Clique em **Avançar** até o fim. Se o computador não tiver o Python, o instalador coloca sozinho
@@ -55,7 +55,7 @@ automática: não precisa baixá-lo.
 - O PMI-GO só se atualiza sozinho com pacote baixado desta página **e assinado digitalmente** pelo PMI-GO; se a
   instalação falhar, ele volta para a versão anterior. Nunca pede senha para atualizar.
 - Para conferir se o arquivo chegou íntegro, compare o hash SHA-256 com o `SHA256SUMS.txt` da versão
-  (PowerShell: `Get-FileHash .\PMI-GO-Setup-0.11.0.exe -Algorithm SHA256`).
+  (PowerShell: `Get-FileHash .\PMI-GO-Setup-0.11.1.exe -Algorithm SHA256`).
 
 ---
 
